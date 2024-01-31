@@ -1,0 +1,29 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color for the entire page */
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  main {
+    max-width: 800px;
+    margin: 90px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style the header */
+  header {
+    background-color: #726f6f;
+    color: #af8383;
+    padding: 10px;
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    color: #3a3535;
+  }
