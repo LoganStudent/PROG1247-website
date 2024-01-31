@@ -1,0 +1,80 @@
+/* these parts show the borders around my quotations and setting the color for the pages and aligning text/video properly. 
+I did realize that my pictures do seem kind of wonky and I am unsure why. Maybe size would change that?*/
+<style>
+	label {
+  	display: block;
+	margin-top: 1em;
+	}
+
+	input:focus {
+	background-color: lightblue;
+	}
+
+	select:focus {
+	background-color: ivory;
+	}
+        .mainsec {
+            border: 1px solid #f7b9b9;
+            border-radius: 8px;
+            padding: 1em;
+        }
+
+        .mainsec-fi {
+            text-align: center;
+        }
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+	        text-align: center;
+            background-color:#ffffff;
+        }
+        
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative; 
+        }
+
+        #conestoga {
+            position: center;
+            top: 10px;
+            left: 10px;
+            max-width: 100px; 
+        }
+        #quote {
+    	   background-color: #fff;
+   	   padding: 1em;
+   	   text-align: center;
+    	   margin: auto;
+    	   width: 50%;
+    	   border-radius: 8px;
+    	   position: relative;
+    	   display: inline-block; 
+    	   margin-top: 20px
+        }
+        #Media {
+    	   background-color: #fff;
+   	   padding: 1em;
+   	   text-align: center;
+    	   margin: auto;
+    	   width: 50%;
+    	   border-radius: 8px;
+    	   position: relative;
+    	   display: inline-block; /* this line centers the "media" section. */
+    	   margin-top: 20px
+        }
+        #Video {
+	    position: center;
+            background-color: #fff;
+            padding: 1em;
+            margin: auto;
+            width: 50%;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+</style>

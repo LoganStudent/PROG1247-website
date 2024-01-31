@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Setting the document tupe and the HTML language.
+
+    Then below I am setting the meta tags as required along with the title of the website.
+    I also have the HTML document reading the "styles.css" I have created with the css folder beforehand. Without this my styles would not be recognized.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, WEB, development, beginner">
+    <meta name="description" content="This is a site for beginners like me to learn.">
+    <title>Logan's website about Bill Gates</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+
+</head>
+<body>
+<!-- Here I am setting the location/area of the conestoga logo that you see at the top of my page. I also used h1 headers for the top header to introduce you to my page.-->
+    <header>
+        <img id="conestoga" src="images/conestoga.jpg" alt="conestoga">
+
+        
+        <h1>Welcome to My Website! - Logan Stevenson</h1>
+        <h1>8927617</h1>
+    </header>
+<!-- Here I am setting the buttons to change pages, I struggled here with actually getting them to link to the exact pages. 
+    It took me about an hour to realize the # has to be before the page so it can properly find it. The only thing I still cannot figure out is how to get the ... 
+    on the buttons to go beside them. I am unsure if buttons were required but I wanted to go the extra step.-->
+    <nav>
+        <ul>
+            <li><a href="#Biography">Biography</a></li>
+            <li><a href="#Media">Media</a></li>
+            <li><a href="#quote">Short quotation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+<!-- here and below these are the seperate "sections" with block quotes as required about Bill gates to show biography, the pictures and so on. -->
+        <section id="Biography" class="mainsec">
+            <h2>Biography: Introduction</h2>
+            <p>My project is revolving around Bill gates, born in october 1955 he is the creator/ founder of Microsoft, one of the most popular companies in the world.</p>
+
+            <blockquote id="Biography">
+                <p><b>Bill Gates</b> is an very experienced  developer. <em>Employee Management</em>, <strong>Concerns for others</strong>, and <i>wants to change the world</i> are what he does best.</p>
+            </blockquote>
+        </section>
+
+        <section id="Media" class="mainsec">
+            <h2>Section 2: Images</h2>
+
+            <figure class="mainsec-figure" id="bill-gates-image">
+                <img src="images/billgates.jpeg" alt="Bil Gates" width="800" height="600"> />
+                <figcaption>This is a picture of Bill Gates!</figcaption>
+            </figure>
+
+            <figure class="mainsec-figure" id="relative-path-image">
+                <img src="https://th.bing.com/th/id/R.776e87e1b617e6e3c549e1e000eb9777?rik=zGlkKLXp2ms4yQ&riu=http%3a%2f%2fstatic2.businessinsider.com%2fimage%2f52efc4776da8115545965210%2fbill-gates-is-considering-working-one-day-a-week-at-microsoft-to-develop-new-products.jpg&ehk=B5Bas74qPVX0hRHUjipEwVDrH2ISEUPqu%2ftv%2buBvfHM%3d&risl=&pid=ImgRaw&r=0" alt="Bill standing" width="700" height="600"> />
+                <figcaption>This photo shows bill gates talking with others.</figcaption>
+            </figure>
+        </section>
+
+        <section id="#quote" class="mainsec">
+            <h2>Section 3: Quote</h2>
+
+            <blockquote id="quote">
+                <q>“Patience is a key element of success.”</q>
+                <citation> - Bill Gates</citation>
+            </blockquote>
+        </section>
+
+        <section id="Video" class="mainsec">
+            <h2>Section 4: Video</h2>
+<!-- Now, this section is setting the youtube video. Luckily on youtube you can click "share" > embed and it gives you pretty much a code to throw into your HTML document. Which I have worked with before.-->
+            <iframe width="560" height="415" src="https://www.youtube.com/embed/6Af6b_wyiwI?si=id1Es6lEZERh-jIL" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Logan Stevenson. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
