@@ -1,32 +1,30 @@
-/* Styles.css */
 
-/* Remove default styles for links */
 nav ul li a {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
   }
   
-  /* Change font weight, style, and color */
+
   nav ul li a {
-    font-weight: bold; /* Change font weight */
-    font-style: normal; /* Change font style */
-    color: #fdfdfd; /* Change font color */
+    font-weight: bold; 
+    font-style: normal; 
+    color: #fdfdfd; 
   }
   
-  /* Style nav links as buttons */
+
   nav ul li a {
     display: inline-block;
-    padding: 0.5rem 1rem; /* Adjust padding as needed */
-    margin: 0.5rem; /* Adjust margin as needed */
-    border: 1px solid #333; /* Add border */
-    background-color: #333; /* Set background color */
+    padding: 0.5rem 1rem; 
+    margin: 0.5rem; 
+    border: 1px solid #333; 
+    background-color: #333; 
   }
   
-  /* Change link color on hover */
+/* changes the colour ov the button when hovered on*/
   nav ul li a:hover {
-    color: #fff; /* Change font color */
-    background-color: transparent; /* Reverse background color */
+    color: #fff; 
+    background-color: transparent; 
   }
-  /* Center the navigation links */
+
 nav ul {
     text-align: center;
   }
@@ -34,10 +32,10 @@ nav ul {
   nav ul li {
     display: inline-block;
   }
-  /* CSS declarations using ID selectors */
+
   #float-left {
-    float: left; /* Apply float property */
-    width: 50%; /* Set width to 50% */
+    float: left; 
+    width: 50%; 
 }
 
 
@@ -52,44 +50,44 @@ nav ul {
 }
 
 #button-separator {
-    clear: both; /* Clear the floats */
-    margin-top: 20px; /* Adjust margin as needed */
-    border-top: 1px solid #ccc; /* Add border */
+    clear: both; 
+    margin-top: 20px; 
+    border-top: 1px solid #ccc; 
 }
 
 #faq-section {
-    margin-top: 20px; /* Added margin to separate FAQs from button separator */
+    margin-top: 20px; 
 }
 
 #faq-section h3 {
-    text-align: center; /* Center-align the FAQ heading */
+    text-align: center; 
 }
 
 #faq-section table {
-    width: 100%; /* Make the FAQ table full width */
+    width: 100%; 
 }
 
 #faq-section table td {
-    padding: 8px; /* Add padding to table cells */
-    border: 1px solid #ddd; /* Add border to table cells */
-    text-align: left; /* Align text left in table cells */
+    padding: 8px; 
+    border: 1px solid #ddd; 
+    text-align: left; 
 }
 
-/* Clear property for the footer */
+
 footer {
     clear: both;
 }
 #clear-both {
     clear: both;
-    width: 100%; /* Adjust width as needed */
+    width: 100%; 
 }
 
 #aside-headings {
-    font-variant: small-caps; /* Change font variant to small caps */
-    color: #336699; /* Change font color */
-    text-align: center; /* Center the alignment */
+    font-variant: small-caps; 
+    color: #336699; 
+    text-align: center; 
 }
-/* Remove bullet points and text-decoration for external links */
+
 aside ul {
   list-style-type: none;
   padding: 0;
@@ -97,16 +95,16 @@ aside ul {
 
 aside ul li a {
   text-decoration: none;
-  color: #000000; /* Change font color */
-  line-height: 2; /* Increase line-height */
+  color: #000000; 
+  line-height: 2; 
 }
 
-/* Change link text color on hover */
+
 aside ul li a:hover {
   color: #cc3366; /* Change color on hover */
 }
 body {
-    text-align: center; /* Center-align all text */
+    text-align: center; 
     width: 80%;
     max-width: 1200px;
     padding: 1rem;
@@ -147,11 +145,11 @@ body {
   
   #Biography {
     float: left;
-    width: 70%; /* Adjust as needed */
+    width: 70%; 
 }
 
 #quote {
-    clear: both; /* Ensure next section starts below floated elements */
+    clear: both; 
 }
   .figure-class {
     padding: 0.5rem; 
@@ -164,7 +162,7 @@ body {
   }
   
   .image-class {
-    border-radius: 5px; /* Adjust as needed */
+    border-radius: 5px; 
   }
   
   
@@ -200,9 +198,9 @@ body {
     color: #33FF57; 
   }
   
-  /* Font color for h1 and h2 elements */
+
   h1, h2 {
-    color: rgb(255, 255, 255); /* Adjust as needed */
+    color: rgb(255, 255, 255); 
   }
   
   
@@ -222,12 +220,12 @@ body {
     background-color: hsla(60, 60%, 70%, 0.7); 
   }
   
-  /* Define a custom property for copyright text */
+
   :root {
     --copyright-text: '© 2024 Logan Stevenson 8927617. All rights reserved.';
   }
   
-  /* Body element selector */
+
   body {
     width: 80%;
     max-width: 1200px;
@@ -240,6 +238,6 @@ body {
     display: block;
     text-align: center;
     font-size: 0.8rem;
-    color: #999; /* Adjust as needed */
-    margin-top: 20px; /* Adjust spacing from content */
+    color: #999; 
+    margin-top: 20px; 
   }
