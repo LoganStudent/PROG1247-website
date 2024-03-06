@@ -72,8 +72,18 @@ nav ul {
     border: 1px solid #ddd; 
     text-align: left; 
 }
-
-
+blockquote#quote {
+  border: 2px solid #000; /* You can adjust the border width and color as needed */
+  padding: 10px; /* Optional: Add some padding inside the border */
+}
+blockquote#Biography {
+  border: 2px solid #000; /* You can adjust the border width and color as needed */
+  padding: 10px; /* Optional: Add some padding inside the border */
+}
+#Biography-introduction {
+  border: 2px solid #000; /* You can adjust the border width and color as needed */
+  padding: 10px; /* Optional: Add some padding inside the border */
+}
 footer {
     clear: both;
 }
@@ -81,6 +91,7 @@ footer {
     clear: both;
     width: 100%; 
 }
+
 
 #aside-headings {
     font-variant: small-caps; 
@@ -99,7 +110,11 @@ aside ul li a {
   line-height: 2; 
 }
 
-
+.youtube-link {
+  display: inline-block;
+  margin-right: 10px; /* Optional: Add some space between the image and the text */
+  margin-left: -10px; /* Adjust the value to move the image to the left */
+}
 aside ul li a:hover {
   color: #cc3366; /* Change color on hover */
 }
@@ -140,6 +155,11 @@ body {
   .main-section {
     text-align: center;
     padding: 1rem; 
+  }
+  main{
+    margin : 1rem;
+    width : 70%;
+    float: left;
   }
   
   
