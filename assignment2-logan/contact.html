@@ -2,57 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta fullname="viewport" content="width=device-width, initial-scale=1.0">
-    <meta fullname="keywords" content="HTML, CSS, WEB, noob">
-    <meta fullname="description" content="This is a site for beginners/noobs like me to learn.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, WEB, noob">
+    <meta name="description" content="This is a site for beginners/noobs like me to learn.">
     <title>Contact Us - Logan's website about Bill Gates</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <style>
-        /* Same info from index.html above.*/
-        /* This is setting the spot for the contact form page*/
-        #Contact {
-            text-align: center; 
-            margin: 0 auto; 
-            max-width: 600px; 
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        /* Style for the form buttons*/
-        #Contact label {
-            display: inline-block; 
-            width: 120px; 
-            text-align: left; 
-            margin-bottom: 6px; 
+        main {
+            padding-bottom: 50px; /* Adjust as needed based on footer height */
         }
 
-        /* Style for the form */
-        #Contact input[type="text"],
-        #Contact input[type="email"],
-        #Contact input[type="date"],
-        #Contact textarea,
-        #Contact select {
-            width: calc(100% - 10px); 
-            padding: 10px; 
-            margin: 5px 0 15px; 
-            border: 1px solid #ccc; 
-            border-radius: 5px; 
-            box-sizing: border-box; 
+        aside {
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-left: 20px; /* Adjust as needed */
         }
 
-        /* Style for the submit button */
-        #Contact input[type="submit"] {
-            width: 100%; 
-            padding: 10px; 
-            background-color: #333; 
-            color: #fff; 
-            border: none; 
-            border-radius: 5px; 
-            cursor: pointer; 
-            transition: background-color 0.3s; 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
 
-        /*Changing the colour for when you hover over the button. */
-        #Contact input[type="submit"]:hover {
-            background-color: #555; 
+        table td, table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            margin-top: auto; /* Push footer to the bottom */
         }
     </style>
 </head>
@@ -68,7 +66,6 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="contact.html">Contact</a></li>
-        
     </ul>
 </nav>
 
@@ -76,31 +73,49 @@
     <section id="Contact" class="mainsec">
         <h2>Contact Logan</h2>
         <form action="submittedcontact.php" method="post">
-            <label for="fullfullname">Please Enter your full name:</label>
-            <input type="text" id="fullname" fullname="fullname" placeholder="Enter your full name please:" required><br><br>
+            <label for="fullname">Please Enter your full name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name please:" required><br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" fullname="email" placeholder="Enter your email ensure to use @ symbol." required><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email ensure to use @ symbol." required><br><br>
 
             <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" fullname="dob"><br><br>
+            <input type="date" id="dob" name="dob"><br><br>
 
             <label for="num">Phone Number:</label>
-            <input type="tel" id="num" fullname="num"><br><br> 
+            <input type="tel" id="num" name="num"><br><br> 
             <label for="reason">Reason for Contact:</label>
-            <select id="reason" fullname="reason">
+            <select id="reason" name="reason">
                 <option value="question">Question</option>
                 <option value="suggestion">Suggestion</option>
                 <option value="support">Support</option>
             </select><br><br>
 
             <label for="message">Your Message:</label><br>
-            <textarea id="message" fullname="message" rows="5" cols="60" placeholder="Enter your comment please." required></textarea><br><br>
+            <textarea id="message" name="message" rows="5" cols="60" placeholder="Enter your comment please." required></textarea><br><br>
 
             <input type="submit" value="Send your message">
         </form>
     </section>
 </main>
+
+<aside>
+    <h3 id="aside-headings">FAQs</h3>
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Answer</th>
+        </tr>
+        <tr>
+            <td><strong>How old is Bill Gates?</strong></td>
+            <td>68</td>
+        </tr>
+        <tr>
+            <td><strong>Where does he live?</strong></td>
+            <td>He lives in Washington.</td>
+        </tr>
+    </table>
+</aside>
 
 <footer>
     <p>&copy; 2024 Logan Stevenson. All rights reserved.</p>
