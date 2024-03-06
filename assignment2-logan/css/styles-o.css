@@ -1,0 +1,149 @@
+
+body {
+  width: 80%; 
+  max-width: 1200px; 
+  padding: 1rem; 
+  margin: 0 auto;
+}
+
+.image-class {
+  width: 100%; 
+  height: auto;
+}
+
+.figure-class {
+  width: 80%; 
+  height: auto;
+  margin: 10px auto; 
+}
+
+
+iframe, video {
+  width: 100%; 
+}
+
+body {
+  padding: 1rem; 
+  margin: 0 auto;
+}
+
+header, footer {
+  text-align: center;
+}
+
+
+.main-section {
+  text-align: center;
+  padding: 1rem; 
+}
+
+
+#biography {
+  text-align: left;
+}
+
+/* Image elements padding */
+.image-class {
+  padding: 0.5rem; /* Adjust as needed */
+}
+
+
+.figure-class {
+  padding: 0.5rem; 
+  margin: 10px 0; 
+  text-align: center;
+}
+
+
+#quote {
+  border: 1px solid #999; 
+  padding: 0.5rem; 
+  box-shadow: 3px 3px 3px #aaa; 
+}
+
+
+header, footer {
+  border: 2px solid #333; 
+}
+
+.image-class {
+  border-radius: 5px; /* Adjust as needed */
+}
+
+
+#figure-relative {
+  border: 2px solid #FF5733; 
+  border-radius: 8px; 
+}
+
+
+#figure-absolute {
+  border: 2px solid #33FF57; 
+  border-radius: 8px; 
+}
+
+iframe, video {
+  border: 2px solid #5733FF; 
+  border-radius: 8px;
+}
+
+
+#blockquote-q {
+  border: 2px solid #F00; 
+  box-shadow: 3px 3px 3px #F00; 
+}
+
+
+
+#figcaption-relative {
+  color: #FF5733; 
+}
+
+#figcaption-absolute {
+  color: #33FF57; 
+}
+
+/* Font color for h1 and h2 elements */
+h1, h2 {
+  color: #00F; /* Adjust as needed */
+}
+
+
+header, footer {
+  background: linear-gradient(to right, #150600, #150600); 
+}
+
+.main-section {
+  background-color: hsla(120, 60%, 70%, 0.7); 
+}
+
+#figure-absolute {
+  background-color: hsla(240, 60%, 70%, 0.7); 
+}
+
+#figure-relative {
+  background-color: hsla(60, 60%, 70%, 0.7); 
+}
+
+/* Define a custom property for copyright text */
+:root {
+  --copyright-text: '© 2024 Logan Stevenson 8927617. All rights reserved.';
+}
+
+/* Body element selector */
+body {
+  width: 80%;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+body::after {
+  content: var(--copyright-text);
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #999; /* Adjust as needed */
+  margin-top: 20px; /* Adjust spacing from content */
+}
+

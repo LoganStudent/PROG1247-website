@@ -1,0 +1,245 @@
+/* Styles.css */
+
+/* Remove default styles for links */
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Change font weight, style, and color */
+  nav ul li a {
+    font-weight: bold; /* Change font weight */
+    font-style: normal; /* Change font style */
+    color: #fdfdfd; /* Change font color */
+  }
+  
+  /* Style nav links as buttons */
+  nav ul li a {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    margin: 0.5rem; /* Adjust margin as needed */
+    border: 1px solid #333; /* Add border */
+    background-color: #333; /* Set background color */
+  }
+  
+  /* Change link color on hover */
+  nav ul li a:hover {
+    color: #fff; /* Change font color */
+    background-color: transparent; /* Reverse background color */
+  }
+  /* Center the navigation links */
+nav ul {
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  /* CSS declarations using ID selectors */
+  #float-left {
+    float: left; /* Apply float property */
+    width: 50%; /* Set width to 50% */
+}
+
+
+#main-content {
+    float: left;
+    width: 70%;
+}
+
+#side-content {
+    float: right;
+    width: 30%;
+}
+
+#button-separator {
+    clear: both; /* Clear the floats */
+    margin-top: 20px; /* Adjust margin as needed */
+    border-top: 1px solid #ccc; /* Add border */
+}
+
+#faq-section {
+    margin-top: 20px; /* Added margin to separate FAQs from button separator */
+}
+
+#faq-section h3 {
+    text-align: center; /* Center-align the FAQ heading */
+}
+
+#faq-section table {
+    width: 100%; /* Make the FAQ table full width */
+}
+
+#faq-section table td {
+    padding: 8px; /* Add padding to table cells */
+    border: 1px solid #ddd; /* Add border to table cells */
+    text-align: left; /* Align text left in table cells */
+}
+
+/* Clear property for the footer */
+footer {
+    clear: both;
+}
+#clear-both {
+    clear: both;
+    width: 100%; /* Adjust width as needed */
+}
+
+#aside-headings {
+    font-variant: small-caps; /* Change font variant to small caps */
+    color: #336699; /* Change font color */
+    text-align: center; /* Center the alignment */
+}
+/* Remove bullet points and text-decoration for external links */
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #000000; /* Change font color */
+  line-height: 2; /* Increase line-height */
+}
+
+/* Change link text color on hover */
+aside ul li a:hover {
+  color: #cc3366; /* Change color on hover */
+}
+body {
+    text-align: center; /* Center-align all text */
+    width: 80%;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  .image-class {
+    width: 100%; 
+    height: auto;
+  }
+  
+  .figure-class {
+    width: 80%; 
+    height: auto;
+    margin: 10px auto; 
+  }
+  
+  
+  iframe, video {
+    width: 100%; 
+  }
+  
+  body {
+    padding: 1rem; 
+    margin: 0 auto;
+  }
+  
+  header, footer {
+    text-align: center;
+  }
+  
+  
+  .main-section {
+    text-align: center;
+    padding: 1rem; 
+  }
+  
+  
+  #Biography {
+    float: left;
+    width: 70%; /* Adjust as needed */
+}
+
+#quote {
+    clear: both; /* Ensure next section starts below floated elements */
+}
+  .figure-class {
+    padding: 0.5rem; 
+    margin: 10px 0; 
+    text-align: center;
+  }
+  
+  header, footer {
+    border: 2px solid #ffffff; 
+  }
+  
+  .image-class {
+    border-radius: 5px; /* Adjust as needed */
+  }
+  
+  
+  #figure-relative {
+    border: 2px solid #FF5733; 
+    border-radius: 8px; 
+  }
+  
+  
+  #figure-absolute {
+    border: 2px solid #33FF57; 
+    border-radius: 8px; 
+  }
+  
+  iframe, video {
+    border: 2px solid #6b6161; 
+    border-radius: 8px;
+  }
+  
+  
+  #blockquote-q {
+    border: 2px solid #F00; 
+    box-shadow: 3px 3px 3px #F00; 
+  }
+  
+  
+  
+  #figcaption-relative {
+    color: #FF5733; 
+  }
+  
+  #figcaption-absolute {
+    color: #33FF57; 
+  }
+  
+  /* Font color for h1 and h2 elements */
+  h1, h2 {
+    color: rgb(255, 255, 255); /* Adjust as needed */
+  }
+  
+  
+  header, footer {
+    background: linear-gradient(to right, #ffffff, #150600); 
+  }
+  
+  .main-section {
+    background-color: hsla(120, 60%, 70%, 0.7); 
+  }
+  
+  #figure-absolute {
+    background-color: hsla(240, 60%, 70%, 0.7); 
+  }
+  
+  #figure-relative {
+    background-color: hsla(60, 60%, 70%, 0.7); 
+  }
+  
+  /* Define a custom property for copyright text */
+  :root {
+    --copyright-text: '© 2024 Logan Stevenson 8927617. All rights reserved.';
+  }
+  
+  /* Body element selector */
+  body {
+    width: 80%;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  body::after {
+    content: var(--copyright-text);
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999; /* Adjust as needed */
+    margin-top: 20px; /* Adjust spacing from content */
+  }

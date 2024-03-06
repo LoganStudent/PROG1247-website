@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, WEB, development, beginner">
+    <meta name="description" content="This is a site for beginners like me to learn.">
+    <title>Contact Us - Logan's website about Bill Gates</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        /* Additional styles for the contact form */
+        #Contact {
+            text-align: center; /* Center-align the contact form */
+            margin: 0 auto; /* Center the form horizontally */
+            max-width: 600px; /* Set max-width for the form */
+        }
+
+        /* Style for the form labels */
+        #Contact label {
+            display: inline-block; /* Display labels inline */
+            width: 120px; /* Set width for labels */
+            text-align: left; /* Align labels to the left */
+            margin-bottom: 5px; /* Add margin below labels */
+        }
+
+        /* Style for the form inputs */
+        #Contact input[type="text"],
+        #Contact input[type="email"],
+        #Contact input[type="date"],
+        #Contact textarea,
+        #Contact select {
+            width: calc(100% - 10px); /* Make inputs full width */
+            padding: 10px; /* Add padding to inputs */
+            margin: 5px 0 15px; /* Add margin around inputs */
+            border: 1px solid #ccc; /* Add border to inputs */
+            border-radius: 5px; /* Add border radius to inputs */
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+
+        /* Style for the submit button */
+        #Contact input[type="submit"] {
+            width: 100%; /* Make the button full width */
+            padding: 10px; /* Add padding to the button */
+            background-color: #333; /* Background color for the button */
+            color: #fff; /* Text color for the button */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners for the button */
+            cursor: pointer; /* Add pointer cursor */
+            transition: background-color 0.3s; /* Add transition effect */
+        }
+
+        /* Hover effect for the submit button */
+        #Contact input[type="submit"]:hover {
+            background-color: #555; /* Change background color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img id="conestoga" src="images/conestoga.jpg" alt="conestoga">
+    <h1>Welcome to My Website! - Logan Stevenson</h1>
+    <h1>8927617</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="Contact" class="mainsec">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="num">Phone Number:</label>
+            <input type="tel" id="num" name="num"><br><br> <!-- Changed to tel for phone number -->
+
+            <label for="reason">Reason for Contact:</label>
+            <select id="reason" name="reason">
+                <option value="question">Question</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="support">Support</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Logan Stevenson. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
