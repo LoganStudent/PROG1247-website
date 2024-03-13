@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, WEB, noob">
     <meta name="description" content="This is a site for beginners/noobs like me to learn.">
-    <title>Contact Us - Logan's website about Bill Gates</title>
+    <title>Contact Me - Logan's website about Bill Gates</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <style>
         body {
@@ -23,7 +23,7 @@
         aside {
             padding: 20px;
             background-color: #f0f0f0;
-            margin-left: 20px; /* Adjust as needed */
+            margin-left: 20px; 
         }
 
         table {
@@ -50,7 +50,7 @@
         }
 
         footer {
-            margin-top: auto; /* Push footer to the bottom */
+            margin-top: auto; 
         }
     </style>
 </head>
@@ -58,7 +58,7 @@
 
 <header>
     <img id="conestoga" src="images/conestoga.jpg" alt="conestoga">
-    <h1>Welcome to My new and improved website! - Logan Stevenson</h1>
+    <h1>Welcome to the contact form!</h1>
     <h1>8927617</h1>
 </header>
 
@@ -72,9 +72,9 @@
 <main>
     <section id="Contact" class="mainsec">
         <h2>Contact Logan</h2>
-        <form action="submittedcontact.php" method="post">
+        <form name="email_form" id="email_form" action="success.html"> 
             <label for="fullname">Please Enter your full name:</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name please:" required><br><br>
+            <input type="text" id="fullname" name="fullname" autofocus placeholder="Enter your full name please:"  required><br><br>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter your email ensure to use @ symbol." required><br><br>
@@ -93,12 +93,30 @@
 
             <label for="message">Your Message:</label><br>
             <textarea id="message" name="message" rows="5" cols="60" placeholder="Enter your comment please." required></textarea><br><br>
+        </div>
+    </fieldset>
+        <fieldset>
+            <legend>Questions for you</legend>
+            <legend>What services do you want us to contact you on?</legend>
+            <label for="Snapchat">Snapchat</label>
+            <input type="checkbox" name=Social id="Snapchat" value="snapchat">
+            <label for="Instagram">Instagram</label>
+            <input type="checkbox" name=Social id="Instagram" value="Instagram">
+            <legend>What is your gender?</legend>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="Other">Other</label>
+            <input type="radio" name="gender" id="other" value="other" checked>
 
+        </fieldset>
+    </div>
             <input type="submit" value="Send your message">
         </form>
     </section>
 </main>
-
+    <div>
 <aside>
     <h3 id="aside-headings">FAQs</h3>
     <table>
